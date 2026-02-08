@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Pepperoni Fresh",
+        "price": "65,000",
+        "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=1000&auto=format&fit=crop",
+        "description": "Pepperoni, motsarella, tomat sousi",
+        "category": "Pitsalar"
+    },
+    {
+        "id": 2,
+        "name": "Pishloqli",
+        "price": "55,000",
+        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1000&auto=format&fit=crop",
+        "description": "Motsarella, cheder, parmezan, alfredo sousi",
+        "category": "Pitsalar"
+    },
+    {
+        "id": 3,
+        "name": "Barbekyu Jo'ja",
+        "price": "72,000",
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1000&auto=format&fit=crop",
+        "description": "Jo'ja, motsarella, barbekyu sousi, qizil piyoz",
+        "category": "Pitsalar"
+    },
+    {
+        "id": 4,
+        "name": "Margarita",
+        "price": "50,000",
+        "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=1000&auto=format&fit=crop",
+        "description": "Pomidor, motsarella, oregano",
+        "category": "Pitsalar"
+    },
+    {
+        "id": 5,
+        "name": "Gavayya",
+        "price": "68,000",
+        "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?q=80&w=1000&auto=format&fit=crop",
+        "description": "Jo'ja, ananas, motsarella",
+        "category": "Pitsalar"
+    },
+    {
+        "id": 6,
+        "name": "Gqo'ziqorinli",
+        "price": "60,000",
+        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1000&auto=format&fit=crop",
+        "description": "Qo'ziqorin, motsarella, tomat sousi, zaytun",
+        "category": "Pitsalar"
+    },
+    {
+        "id": 7,
+        "name": "Kombo Set",
+        "price": "120,000",
+        "image": "https://images.unsplash.com/photo-1595295333158-4742f28fbd85?q=80&w=1000&auto=format&fit=crop",
+        "description": "3 xil pitsa va kola",
+        "category": "Pitsalar"
+    },
+    {
+        "id": 8,
+        "name": "Kartoshka fri",
+        "price": "18,000",
+        "image": "https://images.unsplash.com/photo-1573080496987-a2267b2dfee1?q=80&w=1000&auto=format&fit=crop",
+        "description": "Qarsildoq kartoshka",
+        "category": "Gazaklar"
+    },
+    {
+        "id": 9,
+        "name": "Nagetslar",
+        "price": "22,000",
+        "image": "https://images.unsplash.com/photo-1562967914-608f82629710?q=80&w=1000&auto=format&fit=crop",
+        "description": "Tovuq nagetslari, 8 dona",
+        "category": "Gazaklar"
+    },
+    {
+        "id": 10,
+        "name": "Coca-Cola 1L",
+        "price": "12,000",
+        "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?q=80&w=1000&auto=format&fit=crop",
+        "description": "Muzdek Coca-Cola",
+        "category": "Ichimliklar"
+    },
+    {
+        "id": 11,
+        "name": "Fanta 1L",
+        "price": "12,000",
+        "image": "https://images.unsplash.com/photo-1624517452488-04869289c4ca?q=80&w=1000&auto=format&fit=crop",
+        "description": "Apelsinli gazli ichimlik",
+        "category": "Ichimliklar"
+    },
+    {
+        "id": 12,
+        "name": "Chizkeyk",
+        "price": "25,000",
+        "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=1000&auto=format&fit=crop",
+        "description": "Klassik Nyu-York chizkeyki",
+        "category": "Shirinliklar"
+    }
+]
