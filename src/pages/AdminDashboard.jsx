@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import { Package, CheckCircle, Clock, Search, TrendingUp, DollarSign } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const MOCK_ORDERS = [
     { id: 1739031200000, customer: "Azizbek", total: "185,000", status: "Yangi", items: 3, time: "5 daqiqa oldin" },

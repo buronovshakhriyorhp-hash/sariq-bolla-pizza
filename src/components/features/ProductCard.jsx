@@ -7,8 +7,10 @@ import useWishlistStore from '../../store/useWishlistStore';
 const ProductCard = ({ product }) => {
     const navigate = useNavigate();
     const addItem = useCartStore(state => state.addItem);
-    const { toggleWishlist, isInWishlist } = useWishlistStore();
-    const isFavorite = isInWishlist(product.id);
+    const wishlist = useWishlistStore(state => state.wishlist);
+    const toggleWishlist = useWishlistStore(state => state.toggleWishlist);
+
+    const isFavorite = wishlist.some(item => item.id === product.id);
 
     const handleAddToCart = (e) => {
         e.stopPropagation();

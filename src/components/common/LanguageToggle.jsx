@@ -1,6 +1,6 @@
 import React from 'react';
 import useLanguageStore from '../../store/useLanguageStore';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { Globe } from 'lucide-react';
 
 const LanguageToggle = () => {

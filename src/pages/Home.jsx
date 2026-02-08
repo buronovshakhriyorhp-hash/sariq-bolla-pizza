@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import HeroCarousel from '../components/features/HeroCarousel';
 import ProductCard from '../components/features/ProductCard';
 import { PRODUCTS } from '../data/mockData';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const CATEGORIES = ["Barchasi", "Pitsalar", "Gazaklar", "Ichimliklar", "Shirinliklar", "Souslar"];
 

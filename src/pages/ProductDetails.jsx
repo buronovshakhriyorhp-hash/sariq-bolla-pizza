@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Minus, Plus, ShoppingBag, Heart, Clock, Star } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { PRODUCTS } from '../data/mockData';
 import useCartStore from '../store/useCartStore';
 import useWishlistStore from '../store/useWishlistStore';
@@ -11,10 +12,11 @@ const ProductDetails = () => {
     const navigate = useNavigate();
     const product = PRODUCTS.find(p => p.id === parseInt(id));
     const addItem = useCartStore(state => state.addItem);
-    const { toggleWishlist, isInWishlist } = useWishlistStore();
+    const wishlist = useWishlistStore(state => state.wishlist);
+    const toggleWishlist = useWishlistStore(state => state.toggleWishlist);
 
     const [quantity, setQuantity] = useState(1);
-    const isFavorite = product ? isInWishlist(product.id) : false;
+    const isFavorite = product ? wishlist.some(item => item.id === product.id) : false;
 
     if (!product) {
         return <div className="text-center py-20 dark:text-white">Mahsulot topilmadi</div>;

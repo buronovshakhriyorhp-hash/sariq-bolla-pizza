@@ -5,7 +5,7 @@ import useCartStore from '../../store/useCartStore';
 import ThemeToggle from '../common/ThemeToggle';
 import LanguageToggle from '../common/LanguageToggle';
 import useLanguageStore, { translations } from '../../store/useLanguageStore';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const Header = () => {
     const { language } = useLanguageStore();
@@ -37,10 +37,10 @@ const Header = () => {
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+            className={`fixed top - 0 left - 0 right - 0 z - 50 transition - all duration - 300 ${isScrolled
                 ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm py-2'
                 : 'bg-transparent py-4'
-                }`}
+                } `}
         >
             <div className="container mx-auto px-4 flex justify-between items-center">
                 {/* Mobile Menu (Hamburger) */}
@@ -120,7 +120,7 @@ const Header = () => {
                             <ShoppingBag size={20} />
                             <span className="hidden sm:inline transition-all">
                                 {itemCount > 0 ? `${totalPrice.toLocaleString()} so'm` : t.cart}
-                            </span>
+                            </span >
                             <AnimatePresence>
                                 {itemCount > 0 && (
                                     <motion.span
@@ -134,11 +134,11 @@ const Header = () => {
                                     </motion.span>
                                 )}
                             </AnimatePresence>
-                        </motion.div>
-                    </Link>
-                </div>
-            </div>
-        </motion.header>
+                        </motion.div >
+                    </Link >
+                </div >
+            </div >
+        </motion.header >
     );
 };
 

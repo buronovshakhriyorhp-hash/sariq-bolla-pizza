@@ -6,7 +6,7 @@ import useCartStore from '../store/useCartStore';
 
 const Checkout = () => {
     const navigate = useNavigate();
-    const { items, getTotalPrice, clearCart } = useCartStore();
+    const { clearCart, getTotalPrice } = useCartStore();
     const totalPrice = getTotalPrice();
 
     const [formData, setFormData] = useState({
@@ -21,21 +21,13 @@ const Checkout = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [orderId, setOrderId] = useState(null);
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         setIsLoading(true);
-        const toastId = toast.loading("Buyurtma yuborilmoqda...");
-
-        const orderData = {
-            customer: formData,
-            items: items,
-            totalPrice: totalPrice,
-            paymentMethod: paymentMethod
-        };
+        const toastId = toast.loading('Buyurtma rasmiylashtirilmoqda...');
 
         // Simulate API call
         setTimeout(() => {
-            console.log("Order Placed (Mock):", orderData);
             setOrderId(Date.now());
             setIsOrderPlaced(true);
             clearCart();

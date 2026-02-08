@@ -15,7 +15,7 @@ const Footer = () => {
 
         // Simulate API call
         setTimeout(() => {
-            console.log("Newsletter subscribed:", email);
+
             setStatus('success');
             toast.dismiss(toastId);
             toast.success("Yangiliklarga obuna bo'ldingiz! 📧");
